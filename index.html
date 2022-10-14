@@ -1,254 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube</title>
-
     <link rel="stylesheet" href="./assets/css/main.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="app" href="app.js">
+    <title>Youtube</title>
 </head>
+
 <body>
+    <div class="header">
+        <div class="header__left">
+            <i id="menu" class="material-icons">menu</i>
+            <img href="#" src="Img/IconYt.png" />
+        </div>
 
-    <nav class="navbar">
-        <div class="toggle-btn">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="header__search">
+            <form action="">
+                <input type="text" placeholder="Search" />
+                <button><i class="material-icons">search</i></button>
+            </form>
         </div>
-        <img src="./assets/image/yotube.PNG" class="logo" alt="">
-        <div class="search-box">
-            <input type="text" class="search-bar" placeholder="Tìm kiếm">
-            <button class="search-btn"><img src="./assets/image/tìm kiếm.PNG" alt=""></button>
+
+        <div class="header__icons">
+            <i class="material-icons display-this">search</i>
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons display-this">account_circle</i>
         </div>
-        <div class="user-options">
-            <img src="./assets/image/thông báo.PNG" class="icon" alt="">
-            <img src="./assets/image/thanh công cụ.PNG" class="icon" alt="">
-            <img src="./assets/image/phát trực tiếp.PNG" class="icon" alt="">
-            <div class="user-dp">
-                <img src="./assets/image/profie.png" alt="">
+    </div>
+    </header>
+    <div class="mainBody">
+        <div class="sidebar">
+            <div class="sidebar__categories">
+                <div class="sidebar__category">
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">local_fire_department</i>
+                    <span>Trending</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Subcriptions</span>
+                </div>
             </div>
+            <hr />
+            <div class="sidebar__categories">
+                <div class="sidebar__category">
+                    <i class="material-icons">library_add_check</i>
+                    <span>Library</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">history</i>
+                    <span>History</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">play_arrow</i>
+                    <span>Your Videos</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">watch_later</i>
+                    <span>Watch Later</span>
+                </div>
+                <div class="sidebar__category">
+                    <i class="material-icons">thumb_up</i>
+                    <span>Liked Video</span>
+                </div>
+            </div>
+            <hr />
+            <hr />
+            <div class="sidebar__categories">
+                <h2 class="sidebar-title">KÊNH ĐĂNG KÝ </h2>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/JustaTee.jpg">
+                    <h3 class="sidebar-follow-title">JustaTeeMusic</h3>
+                </div>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/karik.jpg">
+                    <h3 class="sidebar-follow-title">KARIK</h3>
+                </div>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/SVT.jpg">
+                    <h3 class="sidebar-follow-title">SEVENTEEN</h3>
+                </div>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/Bigbang.jpg">
+                    <h3 class="sidebar-follow-title">BIGBANG</h3>
+                </div>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/SSK.jpg">
+                    <h3 class="sidebar-follow-title">SPACESPEAKER</h3>
+                </div>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/YGTY.jpg">
+                    <h3 class="sidebar-follow-title">YGTAEYANG</h3>
+                </div>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/MX.jpg">
+                    <h3 class="sidebar-follow-title">MixiGaming</h3>
+                </div>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/Winner.jpg">
+                    <h3 class="sidebar-follow-title">WINNER</h3>
+                </div>
+                <div class="sidebar__category">
+                    <img class="sidebar-avatar" src="Img/Dean.jpg">
+                    <h3 class="sidebar-follow-title">DEANTRBL</h3>
+                </div>
+            </div>
+            <hr />
         </div>
-    </nav>
 
-    <!-- sidebar -->
-    <div class="side-bar">
-        <a href="#" class="links active"><img src="./assets/image/trang chủ.png" alt="">Trang chủ</a>
-        <a href="#" class="links"><img src="./assets/image/khám phá.PNG" alt="">Khám phá</a>
-        <a href="#" class="links"><img src="./assets/image/kênh đăng ký.PNG" alt="">Kênh đăng ký</a>
-        <hr class="seperator">
-        <a href="#" class="links"><img src="./assets/image/thư viện.PNG" alt="">Thư viện</a>
-        <a href="#" class="links"><img src="./assets/image/video đã xem.PNG" alt="">Video đã xem</a>
-        <a href="#" class="links"><img src="./assets/image/video của bạn.PNG" alt="">Video của bạn</a>
-        <a href="#" class="links"><img src="./assets/image/video xem sau.PNG" alt="">Video xem sau</a>
-        <a href="#" class="links"><img src="./assets/image/video đã thích.PNG" alt="">Video đã thích</a>
-        <a href="#" class="links"><img src="./assets/image/hiển thị thêm.PNG"alt="">Hiển thị thêm</a>
-        <hr class="seperator">
-        <a href="#" class="links"><img src="./assets/image/trò chơi.jpg" alt="">Trò chơi</a>
-        <a href="#" class="links"><img src="./assets/image/thể thao.jpg" alt="">Thể thao</a>
-        <a href="#" class="links"><img src="./assets/image/âm nhạc.jpg" alt="">Âm nhạc</a>
-    </div>
-
-    <!-- filters -->
-    <div class="filters">
-        <button class="filter-options active">Tất cả</button>
-        <button class="filter-options">Danh sách kết hợp</button>
-        <button class="filter-options">Âm nhạc</button>
-        <button class="filter-options">Trực tiếp</button>
-        <button class="filter-options">Thể thao</button>
-        <button class="filter-options">Trò chơi</button>
-        <button class="filter-options">Thiên nhiên</button>
-        <button class="filter-options">Mới tải lên gần đây</button>
-        <button class="filter-options">Đã xem</button>
-        <button class="filter-options">Đề xuất mới </button>
-       
-    </div>
-
-    <!-- videos -->
-<div class="videos">
-    <div class="video-container">
         <div class="video">
-          <img src="./assets/image/anh-nen-may-tinh-dep-nhat-2017.jpg" class="thumbnail" alt="">
-           <div class="content">
-               <img src="./assets/image/profie.png" class="channel-icon" alt="">
-               <div class="info">
-                   <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                   <p class="channel-name">Bóng Đá 24h</p>
-                   <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-               </div>
-           </div>
-       </div> 
-       <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/tt.jpg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/anh-nen-may-tinh-dep-nhat-2017.jpg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/anh-nen-may-tinh-dep-nhat-2017.jpg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/anh-nen-may-tinh-dep-nhat-2017.jpg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/anh-nen-may-tinh-dep-nhat-2017.jpg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-     <div class="video">
-        <img src="./assets/image/hinh-anh-hacker.jpeg" class="thumbnail" alt="">
-         <div class="content">
-             <img src="./assets/image/profie.png" class="channel-icon" alt="">
-             <div class="info">
-                 <h4 class="title">Shakhtar Donetsk-Real Madrid 22/23</h4>
-                 <p class="channel-name">Bóng Đá 24h</p>
-                 <p class="veiws">200K Lượt xem . 1 Ngày trước</p>
-             </div>
-         </div>
-     </div> 
-       
-</div>
-</div>
-    
-    <script src="./assets/js/app.js"></script>
-    <script src="app.js"></script>
-    
+            <div class="categories">
+                <section class="categories-section">
+                    <button class="category active">All</button>
+                    <button class="category">Music</button>
+                    <button class="category">Danh sách kết hợp</button>
+                    <button class="category">Chill Music All Night</button>
+                    <button class="category">CSS</button>
+                    <button class="category">BIGBANG</button>
+                    <button class="category">Rap Viet</button>
+                    <button class="category">JavaScript</button>
+                    <button class="category">Coding</button>
+                    <button class="category">Young Music</button>
+                    <button class="category">The Playah</button>
+                    <button class="category">Grand Theft Auto Online</button>
+
+                </section>
+            </div>
+            <section class="video-section">
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/ThangDien.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/JustaTee.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">THẰNG ĐIÊN | JUSTATEE x PHƯƠNG LY | OFFICIAL MV</a>
+                            <a href="#" class="video-channel-name">JustaTeeMusic</a>
+                            <div class="video-metadata">
+                                <span>163 Tr lượt xem</span> •
+                                <span>2 năm trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/Cry.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/JustaTee.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">[Official MV] Crying Over You - JustaTee ft. Binz</a>
+                            <a href="#" class="video-channel-name">JustaTeeMusic</a>
+                            <div class="video-metadata">
+                                <span>40 Tr lượt xem</span> •
+                                <span>7 năm trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/maxresdefault.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/Wn.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">3107 - W/n , Duongg, Nâu (Official MV)</a>
+                            <a href="#" class="video-channel-name">W/n</a>
+                            <div class="video-metadata">
+                                <span>55 Tr lượt xem</span> •
+                                <span>1 năm trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/3107-3.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/Wn.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">3107-3 | W/n x Nâu x Duongg x Titie | OFFICIAL MV</a>
+                            <a href="#" class="video-channel-name">W/n</a>
+                            <div class="video-metadata">
+                                <span>9 Tr lượt xem</span> •
+                                <span>1 tuần trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/ThangDien.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/JustaTee.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">THẰNG ĐIÊN | JUSTATEE x PHƯƠNG LY | OFFICIAL MV</a>
+                            <a href="#" class="video-channel-name">JustaTeeMusic</a>
+                            <div class="video-metadata">
+                                <span>163 Tr lượt xem</span> •
+                                <span>2 năm trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/Cry.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/JustaTee.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">[Official MV] Crying Over You - JustaTee ft. Binz</a>
+                            <a href="#" class="video-channel-name">JustaTeeMusic</a>
+                            <div class="video-metadata">
+                                <span>40 Tr lượt xem</span> •
+                                <span>7 năm trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/maxresdefault.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/Wn.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">3107 - W/n , Duongg, Nâu (Official MV)</a>
+                            <a href="#" class="video-channel-name">W/n</a>
+                            <div class="video-metadata">
+                                <span>55 Tr lượt xem</span> •
+                                <span>1 năm trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/3107-3.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/Wn.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">3107-3 | W/n x Nâu x Duongg x Titie | OFFICIAL MV</a>
+                            <a href="#" class="video-channel-name">W/n</a>
+                            <div class="video-metadata">
+                                <span>9 Tr lượt xem</span> •
+                                <span>1 tuần trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="video-section">
+                <h2 class="video-section-title">
+                    Tin tức về Covid-19
+                    <button class="video-section-title-close">&times;</button>
+                </h2>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/Covid98.webp">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/TV24h.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Tin tức Covid-19 mới nhất hôm nay 9/8.Dich Virus Corona Vì sao Hà Nội siết chặt giấy đi đường?</a>
+                            <a href="#" class="video-channel-name">TV24h</a>
+                            <div class="video-metadata">
+                                <span>232 N lượt xem</span> •
+                                <span>Phát trực tiếp 1 ngày trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/hq720.jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/VTC NOW.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Phó Chủ tịch Bình Dương dự báo trong 1 tuần nữa số ca mắc Covid-19 tỉnh nhà lên hơn 3 vạn | VTC Now</a>
+                            <a href="#" class="video-channel-name">VTC NOW</a>
+                            <div class="video-metadata">
+                                <span>34 N lượt xem</span> •
+                                <span>2 ngày trước</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/hq720 (2).jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/BTN.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Bản tin Covid-19 ngày 7.8: Cả nước thêm 7.334 ca bệnh; tin mới từ vắc xin NanoCovax</a>
+                            <a href="#" class="video-channel-name">Báo Thanh Niên</a>
+                            <div class="video-metadata">
+                                <span>382 N lượt xem</span> •
+                                <span>Phát trực tiếp 2 ngày</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="video-container"></div>
+                    <a href="#" class="thumbnail">
+                        <img class="thumbnail-image" src="Img/hq720 (1).jpg">
+                    </a>
+                    <div class="video-bottom-section">
+                        <a href="#">
+                            <img class="channel-icon" src="Img/NTT.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Sáng 8/8: Cả nước thêm 4.941 ca mắc Covid-19, riêng TPHCM 1.896 ca, Hà Nội 63 ca</a>
+                            <a href="#" class="video-channel-name">NOW TIN MỚI</a>
+                            <div class="video-metadata">
+                                <span>15 N lượt xem</span> •
+                                <span>Phát trực tiếp 2 ngày</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
